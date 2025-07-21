@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน - AI Quant Tech By RBRU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        :root {
+            --dark-blue: #0a192f; --navy-blue: #112240; --light-navy: #233554;
+            --slate: #8892b0; --light-slate: #a8b2d1; --white: #e6f1ff;
+            --teal: #64ffda; --teal-dark: #13a187;
+        }
+        body { font-family: 'Kanit', sans-serif; background-color: var(--dark-blue); color: var(--slate); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .login-container { background-color: var(--navy-blue); padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7); width: 100%; max-width: 400px; text-align: center; }
+        .logo { color: var(--white); text-decoration: none; font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; display: block; }
+        .logo i { color: var(--teal); }
+        h2 { color: var(--white); margin-bottom: 30px; }
+        .form-group { margin-bottom: 20px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 5px; color: var(--light-slate); }
+        .form-group input { width: 100%; padding: 12px; background-color: var(--dark-blue); border: 1px solid var(--light-navy); border-radius: 5px; color: var(--white); font-size: 1rem; font-family: 'Kanit', sans-serif; box-sizing: border-box; }
+        .btn { display: inline-block; width: 100%; padding: 12px 28px; background-color: var(--teal); color: var(--dark-blue); border: 2px solid var(--teal); border-radius: 5px; text-decoration: none; font-size: 1.1rem; font-weight: 700; transition: all 0.3s ease; cursor: pointer; margin-top: 10px; }
+        .btn:hover { background-color: var(--teal-dark); border-color: var(--teal-dark); }
+        .switch-form { margin-top: 20px; }
+        .switch-form a { color: var(--teal); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <a href="index.html" class="logo"><i class="fas fa-chart-line"></i> AI Quant Tech</a>
+        <h2>สร้างบัญชีใหม่</h2>
+        <form action="register.php" method="post">
+            <div class="form-group">
+                <label for="username">ชื่อผู้ใช้</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">ลงทะเบียน</button>
+        </form>
+        <div class="switch-form">
+            <p>มีบัญชีอยู่แล้ว? <a href="login.html">เข้าสู่ระบบที่นี่</a></p>
+        </div>
+    </div>
+</body>
+</html>
